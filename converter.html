@@ -1,0 +1,28 @@
+
+<html>
+<head>
+	<title>Weather converter</title>
+</head>
+<body>
+		<form id="temp" class="weather">
+			<label>Weather Conversion</label>
+			<p><input type="text" name="weather" class="value"></p>
+			<!-- <p><input type="text" name="" class="degree"></p> -->
+			<input type="submit" name="submit" class="convert" value="convert">
+		</form>
+
+		<div class="degree">
+		</div>
+<script type="text/javascript" src="node_modules/systemjs/dist/system.js"></script>
+
+<script type="text/javascript">
+	System.config({
+		meta: {
+			format:"cjs"
+		}
+	})
+	SystemJS.import("js/app.js")
+
+</script>		
+</body>
+</html>
